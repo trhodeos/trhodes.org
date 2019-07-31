@@ -146,13 +146,13 @@ a.sidebar-nav-item.active:focus {
  * with a 25%-wide `.sidebar`.
  */
 
-.content {
+.container {
   padding-top:    4rem;
   padding-bottom: 4rem;
 }
 
 @media (min-width: 48em) {
-  .content {
+  .container {
     max-width: 38rem;
     margin-left: 20rem;
     margin-right: 2rem;
@@ -160,7 +160,7 @@ a.sidebar-nav-item.active:focus {
 }
 
 @media (min-width: 64em) {
-  .content {
+  .container {
     margin-left: 22rem;
     margin-right: 4rem;
   }
@@ -191,7 +191,34 @@ a.sidebar-nav-item.active:focus {
   }
 }
 
+.page-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
 
+.page-list-item {
+  color: #fff;
+  background-color: #484D6D;
+  display: inline-block;
+  padding: .5rem 0.75rem;
+  margin: 0 .2rem;
+  border-radius: .25rem;
+  font-size: .8rem;
+  font-weight: bold;
+}
+
+.page-list-item {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.page-list-item:hover,.page-list-item:focus {
+  text-decoration: none;
+  background-color: #3B405A;
+}
 
 /*
  * Themes
